@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Игровой компьютер — KompOff</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    body {
+      background:
+        radial-gradient(circle at bottom, rgba(255,122,0,0.14), rgba(255,122,0,0.06) 20%, transparent 60%),
+        radial-gradient(circle at top, rgba(255,122,0,0.18), transparent 30%),
+        #0b0b0d;
+    }
+
+    .page-shell {
+      max-width: 980px;
+      margin: 40px auto 64px;
+      padding: 0 16px;
+    }
+
+    .detail-panel {
+      background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 24px;
+      padding: 32px 28px;
+      box-shadow: 0 18px 40px rgba(0,0,0,0.18);
+    }
+
+    .detail-kicker {
+      display: inline-block;
+      background: rgba(255,122,0,0.1);
+      color: var(--accent-2);
+      border: 1px solid rgba(255,122,0,0.15);
+      border-radius: 999px;
+      padding: 8px 12px;
+      font-size: 0.72rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      margin-bottom: 14px;
+    }
+
+    h1 {
+      margin: 0 0 18px;
+      font-size: clamp(2.2rem, 5vw, 3.4rem);
+      line-height: 1.1;
+    }
+
+    .lead {
+      color: var(--muted);
+      font-size: 1.08rem;
+      line-height: 1.8;
+      margin: 0 0 18px;
+    }
+
+    .detail-panel h2 {
+      margin: 26px 0 12px;
+      font-size: 1.4rem;
+    }
+
+    .detail-panel ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: grid;
+      gap: 10px;
+      color: var(--muted);
+      line-height: 1.7;
+    }
+
+    .detail-panel li::before {
+      content: "• ";
+      color: var(--accent);
+      font-weight: 700;
+    }
+
+    .detail-panel strong {
+      color: var(--text);
+    }
+
+    .cta-row {
+      margin-top: 28px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .detail-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      border-radius: 12px;
+      padding: 14px 20px;
+      font-weight: 700;
+      transition: transform 0.2s ease;
+    }
+
+    .detail-btn:hover {
+      transform: translateY(-1px);
+    }
+
+    .detail-btn.primary {
+      background: linear-gradient(135deg, var(--accent), var(--accent-2));
+      color: #111;
+    }
+
+    .detail-btn.whatsapp {
+      background: linear-gradient(135deg, #ff9f1c, #ff7a00);
+      color: #111;
+      border: 1px solid rgba(255,122,0,0.25);
+      box-shadow: 0 10px 24px rgba(255, 122, 0, 0.25);
+    }
+
+    .detail-btn.secondary {
+      border: 1px solid rgba(255,255,255,0.12);
+      color: var(--text);
+      background: transparent;
+    }
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <div class="container nav">
+      <div class="brand">KompOff</div>
+      <a class="call-btn" href="index.html">Назад в каталог</a>
+    </div>
+  </header>
+
+  <main class="page-shell">
+    <section class="detail-panel">
+      <span class="detail-kicker">Игровой компьютер</span>
+      <h1>Игровой компьютер — готовый комплект</h1>
+
+      <p class="lead">
+        Производительный игровой комплект для комфортной игры, работы, учёбы и стриминга.
+      </p>
+
+      <h2>Комплектация:</h2>
+      <ul>
+        <li>AMD Ryzen 5 8400F</li>
+        <li>Gigabyte A620M DS3H</li>
+        <li>RTX 5050 GAMING OC 8 ГБ</li>
+        <li>16 ГБ DDR5</li>
+        <li>SSD 512 ГБ NVMe</li>
+        <li>Блок питания 750W</li>
+        <li>Монитор Gigabyte 23.8” 180 Гц</li>
+        <li>Клавиатура Razer Ornata V3 X</li>
+        <li>Мышь Razer Viper V2 Pro</li>
+        <li>Гарнитура Razer BlackShark V2 X</li>
+        <li>Микрофон Razer Seiren V2 X</li>
+      </ul>
+
+      <p class="lead" style="margin-top: 22px;">
+        <strong>В комплекте:</strong> компьютер, монитор, клавиатура, мышь, гарнитура и микрофон.
+      </p>
+
+      <p class="lead"><strong>Цена: 799 990 ₸</strong></p>
+      <p class="lead">Гарантия — 1 год</p>
+      <p class="lead">Удалённая техническая поддержка 24/7</p>
+
+      <div class="cta-row">
+        <a class="detail-btn primary" href="tel:+77077108845">Связаться по телефону</a>
+        <a class="detail-btn whatsapp" href="http://wa.me/77077108845" target="_blank" rel="noreferrer">Связаться по WhatsApp</a>
+        <a class="detail-btn secondary" href="index.html">Вернуться в каталог</a>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
